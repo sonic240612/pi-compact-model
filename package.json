@@ -1,0 +1,33 @@
+{
+	"name": "pi-compact-model",
+	"version": "0.1.0",
+	"description": "Pi extension: use a separate (fast, cheap) model for context compaction and branch summaries",
+	"type": "module",
+	"license": "MIT",
+	"keywords": [
+		"pi-package",
+		"pi",
+		"pi-extension",
+		"compaction",
+		"summarization",
+		"model"
+	],
+	"scripts": {
+		"check": "tsc --noEmit",
+		"test": "node --test test/",
+		"e2e": "node scripts/e2e-rpc.mjs",
+		"e2e:fallback": "node scripts/e2e-rpc.mjs --fallback"
+	},
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"devDependencies": {
+		"@earendil-works/pi-agent-core": "^1.5.2",
+		"@earendil-works/pi-ai": "^1.5.2",
+		"@earendil-works/pi-coding-agent": "^1.5.2",
+		"@types/node": "^26.1.0",
+		"typescript": "^5.9.0"
+	}
+}
